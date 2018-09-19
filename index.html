@@ -279,11 +279,34 @@
     </section>
 
     <section id="contact">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2>Contact Me</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+            <center><h1>Contact Me</h1></center>
+            <hr>
+            <br>
+              <fieldset>
+                <legend>Please feel free to reach out.</legend>
+                <br>
+                <div class="alert alert-danger" id="errorMsg" hidden>Please provide all the information!</div>
+                <div class="alert alert-success" id="successMsg" hidden>Email Sent Successfully!</div>
+                <div class="alert alert-danger" id="errorMail" hidden>Failed to send email</div>
+                 <div class="form-group">
+                  <label for="exampleInputPassword1">Your Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">I'll not share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleTextarea">Comments</label>
+                  <textarea class="form-control" id="comments" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <br>
+                <button onclick="SendEmail();" class="btn btn-primary">Submit</button>
+              </fieldset>
           </div>
         </div>
       </div>
@@ -296,7 +319,12 @@
       </div>
       <!-- /.container -->
     </footer>
-
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script>
+          (function(){
+                emailjs.init("user_sIYId73ReD5KieiK2TQxR");
+            })();
+    </script>
     <!-- Bootstrap core JavaScript -->
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
