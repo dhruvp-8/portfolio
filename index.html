@@ -12,7 +12,8 @@
     <title>Dhruv Patel | Technology Enthusiast</title>
     <link rel="shortcut icon" href="./files/code-solid.ico" type="image/x-icon">
     <!-- Bootstrap core CSS -->
-    <link href=".//css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="./css/scrolling-nav.css" rel="stylesheet">
@@ -74,140 +75,146 @@
     </style>
 
   </head>
-
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Think, Creative!</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#page-top">Who am I?
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#technical-skills">Technical Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#work-experience">Work Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
+    <div class="dizzy-gillespie" id="loader"></div>
+    <div style="position:absolute; left: 38%; bottom: 50%; width: 20%;" id="now-loading">
+        <div class="progress">
+            <div class="progress-bar" id="progressb" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-      </div>
-    </nav>
-    <br><br>
-
-    <!-- Home Page -->
-    <div class="row" style="margin-right: 10px;">
-      <div class="col-md-8">
-        <img src="./files/IMG_7379.jpg" class="img-fluid">
-        <div class="bottom-left">
-          <div class="type-js headline animated bounceInRight">
-            <h1 class="text-js">Hello, I'm Dhruv Patel</h1>   
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <br><br><br><br><br><br>
-        <h2 class="text-center">Who am I?</h2>
-        <hr>
-        <br>
-        <p class="text-center">I'm a Graduate Student pursuing my <b>Master in Computer Science</b> in the Viterbi School of Engineering at the <b>University of Southern California</b>. I earned my bachelor's degree from Dharmsinh Desai Institute of Technology in Gujarat, India. I have worked as <b>Research Intern at Indian Institute of Technology, Bombay</b> in the field of <b>Natural Language Processing</b> under Prof. Pushpak Bhattacharyya. My research work includes simplification of complex sentences, morphological analysis, semantic analysis and word embeddings. I have a keen interest in algorithm design, problem-solving and computational linguistics. I have also contributed to several open source projects and I'm well versed with fundamentals and cutting-edge technologies used in <b>Web Development and Cloud Computing</b>. In the future, I hope to continue contributing in the field of Artificial Intelligence and run my own software company.</p>
-        <br>
-        <center><a href="https://www.linkedin.com/in/dhruvrpatel16/" class="btn btn-md btn-primary animated bounceInRight" target="_blank">LinkedIn &nbsp;| &nbsp;<i class="fab fa-linkedin-in"></i></a></center>
-        <br>
-        <center><a href="https://github.com/dhruvp-8" class="btn btn-md btn-secondary animated bounceInRight" target="_blank">GitHub &nbsp;| &nbsp;<i class="fab fa-github"></i></a></center>
-        <br>
-        <center><a href="mailto:dhruvrpa@usc.edu" class="btn btn-md btn-danger animated bounceInRight" target="_blank">Email &nbsp;| &nbsp;<i class="far fa-envelope"></i></a></center>
-        <br>
-        <center><a href="https://www.facebook.com/profile.php?id=100008141648540" class="btn btn-md btn-facebook animated bounceInRight" target="_blank">Facebook &nbsp;| &nbsp;<i class="fab fa-facebook-f"></i></a></center>
-        <br><br>
-        <hr>
-        <center><a href="./files/Dhruv_Patel_Resume.pdf" class="btn btn-block btn-success animated bounceInUp" target="_blank">Resume &nbsp;| &nbsp;<i class="far fa-file"></i></a></center>
-      </div>
     </div>
+    <div id="main-content" hidden>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">Think, Creative!</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#page-top">Who am I?
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#technical-skills">Technical Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#work-experience">Work Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <br><br>
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="bg-info">
-      <div class="container">
-        <h1 class="text-center">Portfolio</h1>
-        <hr>
-        <br>
-        <div class="row">
-          <div class="col-md-6">
-            <center><h3>Autonomous Education System <a style="color: black;" href="https://github.com/dhruvp-8/eduauto" target="_blank"><i class="fab fa-github"></i></a></h3></center>
-            <center><i>Python, Django, Angular 5</i></center>
-            <br>
-            <ul>
-              <li><p>Created multiple Web Services with OAuth 2.0 authentication for inserting, retrieving and deleting contents of the database.</p></li>
-              <li><p>Developed the client-side with features such as news feed displaying, record insertion UI, accountancy dashboard and online test simulator.</p></li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <center><h3>Word Complexity Detector <a style="color: black;" href="https://github.com/dhruvp-8/word-complexity" target="_blank"><i class="fab fa-github"></i></a></h3></center>
-            <center><i>Python, CoreNLP</i></center>
-            <br>
-            <ul>
-              <li><p>Built a feature based model to obtain various characteristics of words such as syllable count, etymology, morphemes and n-Gram for word complexity detection.</p></li>
-              <li><p>Computed the score between a specific word and its synonyms to detect word usage patterns in English grammar.</p></li>
-            </ul>
+      <!-- Home Page -->
+      <div class="row" style="margin-right: 10px;">
+        <div class="col-md-8">
+          <img src="./files/IMG_7379.jpg" class="img-fluid">
+          <div class="bottom-left">
+            <div class="type-js headline animated bounceInRight">
+              <h1 class="text-js">Hello, I'm Dhruv Patel</h1>   
+            </div>
           </div>
         </div>
-        <br><br>
-        <div class="row">
-          <div class="col-md-6">
-            <center><h3>P2P File Transfer <a style="color: black;" href="https://github.com/dhruvp-8/file-transfer" target="_blank"><i class="fab fa-github"></i></a>&nbsp;&nbsp;<a style="color: black;" href="http://file-transfer.herokuapp.com/" target="_blank"><i class="fas fa-link"></i></a></h3></center>
-            <center><i>Node.js, Peer.js, webRTC, Heroku</i></center>
-            <br>
-            <ul>
-              <li><p>Designed a real-time browser-to-browser communication system for transferring files from one device to multiple devices without uploading files to the server.</p></li>
-              <li><p>Engineered the solution of asynchronous merging of blobs of same file which resulted in out of sequence data delivery using acknowledgement generation.</p></li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <center><h3>Restaurant Automation</h3></center>
-            <center><i>ASP.NET, Microsoft Azure, Stripe</i></center>
-            <br>
-            <ul>
-              <li><p>Constructed an automated restaurant management system with various features such as table reservation, menu selection, bill payment, memberships, and payment gateway.</p></li>
-            </ul>
-          </div>
-        </div>
-        <br><br>
-        <div class="row">
-          <div class="col-md-6">
-            <center><h3>Minesweeper-The Game <a style="color: black;" href="https://github.com/dhruvp-8/Minesweeper-Game" target="_blank"><i class="fab fa-github"></i></a></h3></center>
-            <center><i>HTML, CSS, P5.js</i></center>
-            <br>
-            <ul>
-              <li><p>Programmed the famous minesweeper game and executed modified version of flood fill algorithm to display boxes which do not have mines.</p></li>
-            </ul>
-          </div>
-          <div class="col-md-6">
-            <center><h3>Chatbot with Speech Recognition</h3></center>
-            <center><i>Twilio, Node.js, Web Speech API</i></center>
-            <br>
-            <ul>
-              <li><p>Devised a working version of a simple Chatbot with Speech Recognition
-       capabilities using Web Speech API, Twilio and Node Libraries.</p></li>
-            </ul>
-          </div>
+        <div class="col-md-4">
+          <br><br><br><br><br><br>
+          <h2 class="text-center">Who am I?</h2>
+          <hr>
+          <br>
+          <p class="text-center">I'm a Graduate Student pursuing my <b>Master in Computer Science</b> in the Viterbi School of Engineering at the <b>University of Southern California</b>. I earned my bachelor's degree from Dharmsinh Desai Institute of Technology in Gujarat, India. I have worked as <b>Research Intern at Indian Institute of Technology, Bombay</b> in the field of <b>Natural Language Processing</b> under Prof. Pushpak Bhattacharyya. My research work includes simplification of complex sentences, morphological analysis, semantic analysis and word embeddings. I have a keen interest in algorithm design, problem-solving and computational linguistics. I have also contributed to several open source projects and I'm well versed with fundamentals and cutting-edge technologies used in <b>Web Development and Cloud Computing</b>. In the future, I hope to continue contributing in the field of Artificial Intelligence and run my own software company.</p>
+          <br>
+          <center><a href="https://www.linkedin.com/in/dhruvrpatel16/" class="btn btn-md btn-primary animated bounceInRight" target="_blank">LinkedIn &nbsp;| &nbsp;<i class="fab fa-linkedin-in"></i></a></center>
+          <br>
+          <center><a href="https://github.com/dhruvp-8" class="btn btn-md btn-secondary animated bounceInRight" target="_blank">GitHub &nbsp;| &nbsp;<i class="fab fa-github"></i></a></center>
+          <br>
+          <center><a href="mailto:dhruvrpa@usc.edu" class="btn btn-md btn-danger animated bounceInRight" target="_blank">Email &nbsp;| &nbsp;<i class="far fa-envelope"></i></a></center>
+          <br>
+          <center><a href="https://www.facebook.com/profile.php?id=100008141648540" class="btn btn-md btn-facebook animated bounceInRight" target="_blank">Facebook &nbsp;| &nbsp;<i class="fab fa-facebook-f"></i></a></center>
+          <br><br>
+          <hr>
+          <center><a href="./files/Dhruv_Patel_Resume.pdf" class="btn btn-block btn-success animated bounceInUp" target="_blank">Resume &nbsp;| &nbsp;<i class="far fa-file"></i></a></center>
         </div>
       </div>
-      </div>
-    </section>
 
+      <!-- Portfolio -->
+      <section id="portfolio" class="bg-info">
+        <div class="container">
+          <h1 class="text-center">Portfolio</h1>
+          <hr>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <center><h3>Autonomous Education System <a style="color: black;" href="https://github.com/dhruvp-8/eduauto" target="_blank"><i class="fab fa-github"></i></a></h3></center>
+              <center><i>Python, Django, Angular 5</i></center>
+              <br>
+              <ul>
+                <li><p>Created multiple Web Services with OAuth 2.0 authentication for inserting, retrieving and deleting contents of the database.</p></li>
+                <li><p>Developed the client-side with features such as news feed displaying, record insertion UI, accountancy dashboard and online test simulator.</p></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <center><h3>Word Complexity Detector <a style="color: black;" href="https://github.com/dhruvp-8/word-complexity" target="_blank"><i class="fab fa-github"></i></a></h3></center>
+              <center><i>Python, CoreNLP</i></center>
+              <br>
+              <ul>
+                <li><p>Built a feature based model to obtain various characteristics of words such as syllable count, etymology, morphemes and n-Gram for word complexity detection.</p></li>
+                <li><p>Computed the score between a specific word and its synonyms to detect word usage patterns in English grammar.</p></li>
+              </ul>
+            </div>
+          </div>
+          <br><br>
+          <div class="row">
+            <div class="col-md-6">
+              <center><h3>P2P File Transfer <a style="color: black;" href="https://github.com/dhruvp-8/file-transfer" target="_blank"><i class="fab fa-github"></i></a>&nbsp;&nbsp;<a style="color: black;" href="http://file-transfer.herokuapp.com/" target="_blank"><i class="fas fa-link"></i></a></h3></center>
+              <center><i>Node.js, Peer.js, webRTC, Heroku</i></center>
+              <br>
+              <ul>
+                <li><p>Designed a real-time browser-to-browser communication system for transferring files from one device to multiple devices without uploading files to the server.</p></li>
+                <li><p>Engineered the solution of asynchronous merging of blobs of same file which resulted in out of sequence data delivery using acknowledgement generation.</p></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <center><h3>Restaurant Automation</h3></center>
+              <center><i>ASP.NET, Microsoft Azure, Stripe</i></center>
+              <br>
+              <ul>
+                <li><p>Constructed an automated restaurant management system with various features such as table reservation, menu selection, bill payment, memberships, and payment gateway.</p></li>
+              </ul>
+            </div>
+          </div>
+          <br><br>
+          <div class="row">
+            <div class="col-md-6">
+              <center><h3>Minesweeper-The Game <a style="color: black;" href="https://github.com/dhruvp-8/Minesweeper-Game" target="_blank"><i class="fab fa-github"></i></a></h3></center>
+              <center><i>HTML, CSS, P5.js</i></center>
+              <br>
+              <ul>
+                <li><p>Programmed the famous minesweeper game and executed modified version of flood fill algorithm to display boxes which do not have mines.</p></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <center><h3>Chatbot with Speech Recognition</h3></center>
+              <center><i>Twilio, Node.js, Web Speech API</i></center>
+              <br>
+              <ul>
+                <li><p>Devised a working version of a simple Chatbot with Speech Recognition
+         capabilities using Web Speech API, Twilio and Node Libraries.</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Technical Skills -->
     <section id="technical-skills">
       <div class="container-fluid">
         <div class="row">
@@ -252,6 +259,7 @@
       </div>
     </section>
 
+    <!-- Work Experience -->
     <section id="work-experience" class="bg-info">
       <div class="container-fluid">
         <div class="row">
@@ -278,6 +286,7 @@
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact">
       <div class="container-fluid">
         <div class="row">
@@ -317,25 +326,26 @@
       <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; Dhruv Patel 2018</p>
       </div>
-      <!-- /.container -->
+    <!-- /.container -->
     </footer>
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-    <script>
-          (function(){
-                emailjs.init("user_sIYId73ReD5KieiK2TQxR");
-            })();
-    </script>
-    <!-- Bootstrap core JavaScript -->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+  </div>
 
-    <!-- Plugin JavaScript -->
-    <script src="./js/jquery.easing.min.js"></script>
+  <script src="./js/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("user_sIYId73ReD5KieiK2TQxR");
+    })();
+  </script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
 
-    <!-- Custom JavaScript for this theme -->
-    <script src="./js/scrolling-nav.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="./js/main.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="./js/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="./js/scrolling-nav.js"></script>
+  <script src="./js/main.js"></script>
 
   </body>
 
