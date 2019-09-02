@@ -150,7 +150,19 @@
           <br>
           <div class="row">
             <div class="col-md-6">
-              <center><h3>Twitter Stream Analysis</h3></center>
+              <center><h3>Arancia - Distributed Key-Value Store <a style="color: black;" href="https://github.com/dhruvp-8/arancia" target="_blank"><i class="fab fa-github"></i></a></h3></center>
+              <center><i>Go, Python, Celery, RabbitMQ, Terraform, SaltStack, Vagrant, LevelDB</i></center>
+              <br>
+              <ul>
+                <li><p>Implemented a Proxy Server in Go to serve authenticated requests to KV Store from multiple clients via one ingress and
+                egress port</p></li>
+                <li><p>Adopted data atomicity for maintaining data consistency and incorporated write-back set assoc cache to reduce read
+                latency</p></li>
+                <li><p>Scaled out Celery with RabbitMQ as the message broker for scheduling regular snapshots of KV Store</p></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <center><h3>Twitter Stream Analysis <a style="color: black;" href="https://github.com/dhruvp-8/twitter_stream_analysis" target="_blank"><i class="fab fa-github"></i></a></h3></center>
               <center><i>Java, Storm, Apache Kafka</i></center>
               <br>
               <ul>
@@ -184,9 +196,6 @@
                 <li><p>Computed the score between a specific word and its synonyms to detect word usage patterns in English grammar.</p></li>
               </ul>
             </div>
-          </div>
-          <br><br>
-          <div class="row">
             <div class="col-md-6">
               <center><h3>P2P File Transfer <a style="color: black;" href="https://github.com/dhruvp-8/file-transfer" target="_blank"><i class="fab fa-github"></i></a>&nbsp;&nbsp;<a style="color: black;" href="http://file-transfer.herokuapp.com/" target="_blank"><i class="fas fa-link"></i></a></h3></center>
               <center><i>Node.js, Peer.js, webRTC, Heroku</i></center>
@@ -204,9 +213,6 @@
                 <li><p>Constructed an automated restaurant management system with various features such as table reservation, menu selection, bill payment, memberships, and payment gateway.</p></li>
               </ul>
             </div>
-          </div>
-          <br><br>
-          <div class="row">
             <div class="col-md-6">
               <center><h3>Minesweeper-The Game <a style="color: black;" href="https://github.com/dhruvp-8/Minesweeper-Game" target="_blank"><i class="fab fa-github"></i></a></h3></center>
               <center><i>HTML, CSS, P5.js</i></center>
@@ -221,7 +227,7 @@
               <br>
               <ul>
                 <li><p>Devised a working version of a simple Chatbot with Speech Recognition
-         capabilities using Web Speech API, Twilio and Node Libraries.</p></li>
+          capabilities using Web Speech API, Twilio and Node Libraries.</p></li>
               </ul>
             </div>
           </div>
@@ -241,7 +247,7 @@
                 <b>Programming Languages:</b>
               </div>
               <div class=col-md-9>
-                <p>Java (Intermediate), Python (Advanced), JavaScript (Advanced), C++, Scala, HTML, CSS, PHP</p>
+                <p>Go (Advanced), Java (Intermediate), Python (Advanced), JavaScript (Advanced), C++, Scala, HTML, CSS, PHP</p>
               </div>
             </div>
             <div class="row">
@@ -249,23 +255,26 @@
                 <b>Web Frameworks and Databases:</b>
               </div>
               <div class=col-md-9>
-                  <p>Django, Casablanca, Laravel, Node.js, Spring MVC, JHipster, ASP.NET, jQuery, AJAX, Polymer, Angular 5, RxJS, D3.js, MySQL, Postgre SQL, mongoDB, Redis, Firebase, Restful Web Services</p>
+                  <p>Django, Flask, Laravel, Spring MVC, Node.js, Polymer, Angular 7, D3.js, REST, Boto3, Redis, RabbitMQ, Elasticsearch,
+                  Grafana, Celery, Airflow, Kafka, Storm, MySQL, Postgres SQL, Firebase, LevelDB, Cocoa Pods</p>
               </div>
             </div>
             <div class="row">
               <div class=col-md-3>
-                <b>Cloud:</b>
+                <b>Cloud & Infra:</b>
               </div>
               <div class=col-md-9>
-                <p>AWS (Spectrum, RDS, S3, Redshift), GCP (Compute Engine, BigQuery), Docker, Kubernetes</p>
+                <p>AWS (Lambda, Step Functions, S3, IAM, DynamoDB, CloudWatch, API Gateway, SQS, SNS, VPC, EC2, GuardDuty, Inspector,
+                Kinesis Firehose, EKS, ECS, EMR), GCP (Big Query), Terraform, Jenkins, SaltStack, Vagrant, Docker, Prometheus,
+                PagerDuty, Envoy</p>
               </div>
             </div>
             <div class="row">
               <div class=col-md-3>
-                <b>Software and Tools:</b>
+                <b>Systems:</b>
               </div>
               <div class=col-md-9>
-                <p> Spark, Kafka, Storm, Airflow, Git, Kaldi ASR, CoreNLP</p>
+                <p> Linux, Weenix, bpf, netconsd</p>
               </div>
             </div>
           </div>
@@ -278,7 +287,64 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <center><h1>Work Experience</h1></center>
+            <center>
+              <h1>Work Experience</h1>
+            </center>
+            <hr>
+            <br>
+            <div class="row">
+              <div class="col-md-2">
+                <img src="./files/bluejeans.png" width="100px" height="100px">
+              </div>
+              <div class="col-md-10">
+                <h3>BlueJeans Network</h3>
+                <p>Software Engineer Intern - Cloud Infrastructure
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <b>May '19 -- Aug '19</b></p>
+                <ul>
+                  <li>
+                    <p>Built a system to monitor VPC Flow logs on AWS using Kinesis Firehose (for batching the log stream data), S3 (for
+                      storing historical data), Step Functions (for preprocessing the logs), Elasticsearch (for indexing the logs) and
+                      Grafana
+                      (for visualization)</p>
+                  </li>
+                  <li>
+                    <p>Reduced the size of ES Cluster by storing logs in ES index for only 72 hours and requesting them on-demand via
+                      API
+                      Gateway</p>
+                  </li>
+                  <li>
+                    <p>Designed and developed an alerting system to notify severe GuardDuty Findings in real-time using Lambda,
+                      CloudWatch and
+                      SNS</p>
+                  </li>
+                  <li>
+                    <p>Implemented an IAM Policy Checker to detect highly permissive policy changes by comparing it with previous policy
+                      versions using Zelkova (Beta), IAM, Lambda, CloudWatch and SNS</p>
+                  </li>
+                  <li>
+                    <p>Alerting the changes in Network Access Control List, Route Tables and Security Groups on AWS VPC using Lambda,
+                      CloudWatch, SQS and PagerDuty</p>
+                  </li>
+                  <li>
+                    <p>Developed a deployment pipeline for deploying Lambda Functions on AWS using Terraform for provisioning
+                      infrastructure
+                      (maintaining tfstate information on DynamoDB to prevent locking) and ECS Jenkins with Auto-healing to update the
+                      lambda
+                      code from BitBucket using S3</p>
+                  </li>
+                  <li>
+                    <p>Designed a new multi-region deployment architecture for Lambda Functions which reduced the content duplication in
+                      the S3
+                      buckets by 85%</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
             <hr>
             <br>
             <div class="row">
@@ -287,7 +353,7 @@
               </div>
               <div class="col-md-10">
                 <h3>Information Sciences Institute, Marina Del Rey</h3>
-                <p>Graduate Research Assistant – MINT Project &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>October '18 -- Present</b></p>
+                <p>Graduate Research Assistant – MINT Project &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>October '18 -- Apr '19</b></p>
                 <ul>
                   <li><p>Automating Integration of complex geological, agricultural and economical models to forecast effects of human activities on natural resources.</p></li>
                   <li><p>Designing and testing APIs in Java using SparQL to retrieve data from various models in the MINT Catalog.</p></li>
@@ -307,7 +373,7 @@
               </div>
               <div class="col-md-10">
                 <h3>Indian Institute of Technology, Bombay</h3>
-                <p>Research & Development Intern at Center for Indian Language Technology (CFILT) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>December '17 -- April '18</b></p>
+                <p>Research & Development Intern at Center for Indian Language Technology (CFILT) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Dec '17 -- Apr '18</b></p>
                 <ul>
                   <li><p>Built a RESTful API for <i>”A Wordnet based E-Learning Tool for Language Learning”</i> using Django Framework to resolve issue of Database Synchronization leading to duplicate data in database.</p></li>
                   <li><p>Devised a Morphological Analyzer which inspects the internal structure of words to obtain certain features of words such as root word, category, and gender.</p></li>
