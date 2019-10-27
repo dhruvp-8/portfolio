@@ -298,45 +298,27 @@
               </div>
               <div class="col-md-10">
                 <h3>BlueJeans Network</h3>
-                <p>Software Engineer Intern - Cloud Infrastructure
+                <p>Software Engineer Intern
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <b>May '19 -- Aug '19</b></p>
                 <ul>
                   <li>
-                    <p>Built a system to monitor VPC Flow logs on AWS using Kinesis Firehose (for batching the log stream data), S3 (for
-                      storing historical data), Step Functions (for preprocessing the logs), Elasticsearch (for indexing the logs) and
-                      Grafana
-                      (for visualization)</p>
+                    <p>Developed an end-to-end feature to assign Action Items, Decisions and Reviews to specific members present during a
+                    meeting by driving the project from conceptualization to testing and execution. (Java, Spring, MongoDB, JUnit, React). [Released on October 1, 2019]</p>
                   </li>
                   <li>
-                    <p>Reduced the size of ES Cluster by storing logs in ES index for only 72 hours and requesting them on-demand via
-                      API
-                      Gateway</p>
+                    <p>Worked closely with the Platform team to build a log aggregation system on AWS using Lambda (written in Python using
+                    Boto3), Kinesis Firehose, Elasticsearch, Grafana and S3</p>
                   </li>
                   <li>
-                    <p>Designed and developed an alerting system to notify severe GuardDuty Findings in real-time using Lambda,
-                      CloudWatch and
-                      SNS</p>
+                    <p>Engineered a solution to reduce the size of ES Cluster by 50% to provide massive economics on ES by requesting logson-demand</p>
                   </li>
                   <li>
-                    <p>Implemented an IAM Policy Checker to detect highly permissive policy changes by comparing it with previous policy
-                      versions using Zelkova (Beta), IAM, Lambda, CloudWatch and SNS</p>
+                    <p>Assisted in migrating the L7 Proxy Layer of the BlueJeans App from HAProxy to Envoy for incorporating HTTP/2 and gRPC
+                    support (over a period of 3 months performed in various maintenance cycles)</p>
                   </li>
                   <li>
-                    <p>Alerting the changes in Network Access Control List, Route Tables and Security Groups on AWS VPC using Lambda,
-                      CloudWatch, SQS and PagerDuty</p>
-                  </li>
-                  <li>
-                    <p>Developed a deployment pipeline for deploying Lambda Functions on AWS using Terraform for provisioning
-                      infrastructure
-                      (maintaining tfstate information on DynamoDB to prevent locking) and ECS Jenkins with Auto-healing to update the
-                      lambda
-                      code from BitBucket using S3</p>
-                  </li>
-                  <li>
-                    <p>Designed a new multi-region deployment architecture for Lambda Functions which reduced the content duplication in
-                      the S3
-                      buckets by 85%</p>
+                    <p>Developed a tool to reduce overhead of deploying Lambda Functions on AWS using Flask, Jinja, Terraform, Docker and Jenkins</p>
                   </li>
                 </ul>
               </div>
@@ -355,9 +337,13 @@
                 <h3>Information Sciences Institute, Marina Del Rey</h3>
                 <p>Graduate Research Assistant – MINT Project &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>October '18 -- Apr '19</b></p>
                 <ul>
-                  <li><p>Automating Integration of complex geological, agricultural and economical models to forecast effects of human activities on natural resources.</p></li>
-                  <li><p>Designing and testing APIs in Java using SparQL to retrieve data from various models in the MINT Catalog.</p></li>
-                  <li><p>Incorporating Knowledge Graphs and developing UI describing various ontological relations using Polymer and D3.js.</p></li>
+                  <li><p>Designed and developed an ETL pipeline to extract data from RDF Triplestore by converting it into JSON and pushing the
+                  transformed data into Cassandra.</p></li>
+                  <li><p>Built a Model Catalog Explorer to analyze large datasets used for forecasting environmental challenges using Polymer
+                  with Apollo Client (for using GraphQL) and D3.js. Used lazy loading, streams and asynchronous programming to process
+                  large data.</p></li>
+                  <li><p>Contributed in the development of SPARQL Query Manager which is used to execute SPARQL Queries on GRLC and published the
+                  package on PyPI under the name "oba-sparql"</p></li>
                 </ul>
               </div>
             </div>
@@ -375,9 +361,11 @@
                 <h3>Indian Institute of Technology, Bombay</h3>
                 <p>Research & Development Intern at Center for Indian Language Technology (CFILT) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Dec '17 -- Apr '18</b></p>
                 <ul>
-                  <li><p>Built a RESTful API for <i>”A Wordnet based E-Learning Tool for Language Learning”</i> using Django Framework to resolve issue of Database Synchronization leading to duplicate data in database.</p></li>
-                  <li><p>Devised a Morphological Analyzer which inspects the internal structure of words to obtain certain features of words such as root word, category, and gender.</p></li>
-                  <li><p>Performed Lexical Simplification of a sentence under the guidance of Prof. Pushpak Bhattacharyya which involves simplifying complex sentences in the Wordnet inorder to educate language learners.</p></li>
+                  <li><p>Designed and developed APIs in Python using Django REST Framework for Question-Answering System, user-base management
+                  (with OAuth 2.0 API Security) and Wordnet Visualizer. Used React with Redux to populate the data in frontend.</p></li>
+                  <li><p>Built a feature based model using CoreNLP to obtain various characteristics of words such as syllable count, etymology,
+                  morphemes and n-Gram for detecting the complexity of a vocabulary. Achieved a baseline kappa score of 0.498 on trial and
+                  0.204 on test sets.</p></li>
                 </ul>
               </div>
             </div>
